@@ -6,4 +6,6 @@ window.geometry("1000x600")
 window.title("My GUI interface")
 label = tk.Label(window,text = "My GUI", font = ("Times New Roman", 24))
 label.pack(padx=35, pady=35)
+
+textbox
 window.mainloop()
