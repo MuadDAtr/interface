@@ -13,4 +13,7 @@ textbox.pack(padx=40, pady=40)
 button = tk.Button(window, text = "Log in", font = ('Vedrana', 14))
 button.pack()
 
+bframe = tk.Frame(window)
+bframe.columnconfigure(0, weight=1)
+
 window.mainloop()
