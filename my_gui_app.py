@@ -7,7 +7,7 @@ class MyGUI:
 
         self.label = tk.Label(self.root, text = "Hello, Hi!", font = ("Vedrana", 20))
         self.label.pack(padx = 30, pady = 50)
-        self.textbox = tk.Text(self.root, font = ('Times New Roman', 13))
+        self.textbox = tk.Text(self.root, height = 6, font = ('Times New Roman', 13))
         self.textbox.pack(padx = 20, pady = 10)
 
         self.ch_status = tk.IntVar()
@@ -20,6 +20,6 @@ class MyGUI:
         self.root.mainloop()
     
     def test_it(self):
-        pass
+        print(self.ch_status.get())
 
 MyGUI()
