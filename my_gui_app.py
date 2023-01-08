@@ -9,7 +9,7 @@ class MyGUI:
         self.label.pack(padx = 30, pady = 50)
         self.textbox = tk.Textbox(self.root, font = ('Times New Roman', 13))
         self.textbox.pack(padx = 20, pady = 10)
-
-        self.check
-
+ 
+        self.check = tk.Checkbutton(self.root, text = "Testing", font = ('Arial', 17))
+        self.check.pacj()
         self.root.mainloop()
