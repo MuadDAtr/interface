@@ -20,6 +20,7 @@ class MyGUI:
         self.root.mainloop()
     
     def test_it(self):
-        print(self.ch_status.get())
+        if self.ch_status.get() == 0:
+            print(self.textbox.get('1.0', tk.END))
 
 MyGUI()
