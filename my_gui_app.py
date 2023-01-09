@@ -1,5 +1,5 @@
 import tkinter as tk
-
+from tkinter import messagebox
 
 class MyGUI:
     def __init__(self):
@@ -22,5 +22,7 @@ class MyGUI:
     def test_it(self):
         if self.ch_status.get() == 0:
             print(self.textbox.get('1.0', tk.END))
+        else:
+            messagebox.showinfo(title="Hello", message = self.textbox.get('1.0', tk.END))
 
 MyGUI()
